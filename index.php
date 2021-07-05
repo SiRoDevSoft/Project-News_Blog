@@ -23,24 +23,18 @@
         </a>
     </article>
 
-    <?php 
-        
+    <?php         
         endwhile;
         endif;
     ?>
     
 
     <div id="ver">
-        <a href="entries.php">VER TODAS LAS ENTRADAS</a>
+        <a href="entries.php">VER TODAS LAS NOTICIAS</a>
     </div>
 
-   <!-- <div class="video">
-   <iframe allow='encrypted-media' width='700' height='700' 
-   marginwidth='0' marginheight='0' scrolling='no' frameborder='0' 
-   allowfullscreen='yes' src='https://freefeds.com/stream/54013.html'></iframe>
-   </div> -->
 
 </div>
 <!--Fin principal-->
 
-<?php require_once 'includes/footer.php'; ?>
+?php require_once 'includes/footer.php'; ?>
