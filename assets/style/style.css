@@ -1,0 +1,772 @@
+/*Importar las fuentes lo primero de todos*/
+@font-face {
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Estilos Generales*/
+/* Lo primero en hacer para dar estilos es:
+    1) Lo primero es limpiar los margenes y los padding
+    Para ello utilizamos el *{} para seleccionar todos los elementos.
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+    /* text-align: justify; */
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+body {
+    background-image: url(../img/dose-media-bU6JyhSI6zo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+
+/*Estilos de la cabecera*/
+#header {
+
+    width: 90%;
+    height: auto;
+    background-color: rgba(162, 161, 161, 0);
+    margin: 0px auto;
+    /* border: 1px solid black; */
+
+
+}
+
+/*LOGOTIPO*/
+#logo {
+    float: left;
+    width: 150%;
+    height: 100%;
+
+}
+
+#logo a {
+    font-family: "fajala", helvetica;
+    font-size: 250%;
+    letter-spacing: 3px;
+    color: #00aeef;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 200%;
+    margin-left: 1%;
+}
+
+/* Efecto de transicion al acercar el cursor */
+#logo a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*MENU*/
+
+#nav {
+    clear: both;
+    width: 100%;
+    min-width: 35%;
+    height: 35px;
+    background: linear-gradient(to bottom, #6c787c21 0px, #9191913c 100%);
+    border: 1px solid #b3b3b370;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px rgba(204, 204, 204, 0.474);
+    overflow: hidden;
+}
+
+/* Eliminar el estilo por defecto de los items */
+#nav ul {
+    list-style: none;
+}
+
+/* Estilo de cada submenu */
+#nav ul li {
+    float: left;
+    line-height: 35px;
+    border-right: 1px solid #b3b3b3c4;
+
+}
+
+/* Efecto de transiciona al acercar el cursor */
+#nav ul li:hover {
+    background: linear-gradient(to bottom, #eaeaeeb9 0px, #05d9ffab 100px);
+
+}
+
+/* Estilos de la barra de menu */
+#nav ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 80%;
+    color: rgb(49, 83, 92);
+    text-overflow: 1px;
+    font-weight: bold;
+}
+
+/* Efecto de cambiar el color sobre menu */
+#nav ul li a:hover {
+    color: #050014;
+
+}
+
+/* Efecto de cercania al seleccionar un menu */
+#nav ul li a:active {
+    transform: scale(1.05);
+}
+
+/* CONTENIDO */
+#container {
+    width: 90%;
+    height: auto;
+    min-height: auto;
+    margin: 3% auto;
+}
+
+/* Estilos del buscador */
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block
+}
+
+.container-1 #button{
+    height:30px;
+    width: 80px;
+    margin: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.container-1 input#search {
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* Estilos del FORMULARIO */
+
+#sidebar {
+    float: right;
+    width: 25%;
+    height: auto;
+    min-height: auto;
+}
+
+/* Bloques de formularios */
+.block-aside {
+    display: block;
+    width: 98%;
+    margin: 0px auto 20px;
+    background-color: rgba(155, 161, 240, 0.611);
+    margin: 0px auto 10%;
+    padding: 5px;
+    box-shadow: 0px 0px 1px rgba(119, 116, 116, 0.611), 0px 3px 7px rgba(220, 218, 218, 0.974), 0px 0px 1px rgba(119, 116, 116, 0.707), 0px -2px 2px rgba(119, 116, 116, 0.707) inset;
+
+}
+
+/* Titulo de cada bloque de formulario */
+.block-aside h3 {
+    font-family: "fajala";
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(162, 156, 187, 0.748);
+}
+
+/* Etiquetas */
+label {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(6, 6, 216, 0.652);
+    margin: 1px auto;
+    padding: 5px 0px 2px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(252, 251, 251, 0.898);
+
+}
+
+/* ALERTAS */
+.block-true {
+    display: block;
+    width: 98%;
+    margin: 0px auto 20px;
+    background-color: rgba(92, 130, 211, 0.46);
+    margin: 0px auto 10%;
+    padding: 5px;
+    box-shadow: 0px 0px 1px rgba(119, 116, 116, 0.611), 0px 3px 7px rgba(220, 218, 218, 0.974), 0px 0px 1px rgba(119, 116, 116, 0.707), 0px -2px 2px rgba(119, 116, 116, 0.707) inset;
+
+}
+
+.block-true h3 {
+    color: rgb(51, 0, 255);
+    font-family: "fajala";
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(22, 22, 14, 0.748);
+}
+
+.block-alert {
+    display: block;
+    width: 98%;
+    margin: 0px auto 20px;
+    background-color: rgba(255, 111, 0, 0.611);
+    margin: 0px auto 10%;
+    padding: 5px;
+    box-shadow: 0px 0px 1px rgba(119, 116, 116, 0.611), 0px 3px 7px rgba(220, 218, 218, 0.974), 0px 0px 1px rgba(119, 116, 116, 0.707), 0px -2px 2px rgba(119, 116, 116, 0.707) inset;
+}
+
+.block-alert h3 {
+    color: red;
+    font-family: "fajala";
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(241, 245, 19, 0.748);
+}
+
+.alerta-error {
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(179, 22, 22);
+    text-shadow: 0px 1px 0px rgb(205, 199, 208);
+
+}
+
+.alerta-cambio {
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(255, 238, 0);
+    text-shadow: 0px 1px 0px rgb(205, 199, 208);
+}
+
+.warning {
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(237, 2, 2);
+    text-shadow: 0px 1px 0px rgb(205, 199, 208);
+
+}
+
+.alerta-exito {
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(56 243 9);
+    background-color: rgba(53, 119, 52, 0.411);
+    text-shadow: 1px 1px 0px rgba(31, 66, 13, 0.952);
+
+}
+
+/* Etiquetas y cuadros de textos */
+label,
+textarea,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"] {
+    display: inline-block;
+    width: 75%;
+    margin: 0px auto;
+    border-radius: 5px;
+
+}
+
+textarea {
+    width: 75%;
+    max-width: 90%;
+    min-width: 75%;
+    height: 65px;
+    min-height: 25px;
+}
+
+/* Estilos de cuadros de textos */
+textarea,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+}
+
+/* Estilos de cada placeholder */
+
+textarea::placeholder,
+select::placeholder,
+input[type="text"]::placeholder,
+input[type="url"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: inherit;
+    border: none;
+    color: rgba(102, 119, 158, 0.74);
+}
+
+/* Estilos cuando se realiza el foco en cada cuadro de texto*/
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0px 0px 1px rgba(119, 116, 116, 0.611), 0px 3px 7px rgba(220, 218, 218, 0.974), 0px 0px 1px rgba(119, 116, 116, 0.707), 1px -1px 1px rgba(119, 116, 116, 0.707) inset;
+    outline: none;
+}
+
+select {
+    display: block;
+    margin-left: 4.5%;
+    height: 25px;
+    border-radius: 5px;
+    color: #8e9ab7;
+    border: none;
+}
+
+/* Estilos de cursor sobre cuadros de textos */
+
+input[type="text"]:hover,
+input[type="url"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+}
+
+/* Icono para editar*/
+#icono {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+
+
+/* Estilos para botones de formulario */
+input[type="submit"] {
+    display: block;
+    font-family: "fajala";
+    font-size: 85%;
+    /* letter-spacing: 1px; */
+    cursor: pointer;
+
+    width: 50%;
+
+    padding: 2%, 1%;
+    margin: 5% auto;
+    color: rgba(33, 39, 126, 0.659);
+    background: linear-gradient(to bottom, #bfbfdda1 0px, #e0e0fa8c 100px);
+    border-radius: 5px;
+    border: 2px solid rgba(33, 39, 126, 0.659);
+    text-align-last: center;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378);
+
+}
+
+/* Estilos de cursor sobre botones de formulario */
+
+input[type="submit"]:hover {
+    background: #009fdb;
+    color: white;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378);
+    border: 2px solid rgb(92, 89, 148);
+}
+
+/* .user{
+    background: rgb(148, 16, 242);
+
+}
+.exit{
+    background: rgb(236, 47, 47);
+}
+.category{
+    background: rgb(16, 198, 230);
+}
+.entradas{
+    background: rgb(212, 16, 230);
+} */
+.exit,
+.user,
+.entradas,
+.category {
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3% 10%;
+    padding: 1%;
+    color: rgb(89, 102, 109);
+    text-align: start;
+    text-shadow: 1px 1px 0px rgba(8, 8, 8, 0.274);
+    background: #e8e8f079;
+    border: 2px solid rgb(124, 119, 192);
+    width: 40%;
+    min-width: 40%;
+    font-size: 80%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', 'sans-serif';
+}
+
+/* .entrada p a{
+    text-decoration: none;
+    width:90%;
+} */
+
+
+.exit:hover,
+.user:hover,
+.entradas:hover,
+.category:hover {
+    background: linear-gradient(to bottom, #fafafae3 0px, #f2f2f58c 100px);
+    color: rgba(46, 48, 80, 0.659);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378);
+    border: 2px solid rgba(33, 39, 126, 0.11);
+}
+
+/* Caja principal */
+
+/* Estilos de cuadro principal de contenidos */
+
+#principal {
+    float: left;
+    width: 70%;
+    min-height: 20%;
+    background: linear-gradient(92deg, #d4d5dc, #6297afb3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(238, 238, 238, 0.71);
+    margin: auto;
+    padding-right: 5px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+#contact-title {
+    
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#contact-title h1{
+    margin: 10px auto;
+}
+.contact{
+    background: rgba(14, 143, 182, 0.384);
+    border: 2px solid rgb(20, 103, 151);
+    width: 50%;                                                                                                                             
+    margin: auto;
+    border-radius: 15px;
+}
+.contact h3{
+    margin: 20px auto;
+    text-align: center;
+}
+.contact form{
+    width: 90%;
+    margin: auto;
+    display:grid;
+}
+/* Estilos sobre link de redireccion de la caja principal */
+#principal .entrada{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#principal .entrada p a{
+    text-decoration:none ;
+    margin: auto;
+    color: #424444;
+
+}
+
+.dataModify {
+
+    display: block;
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    float: left;
+}
+
+.img_User {
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5%;
+    border: 2px solid #5c5994;
+    border-radius: 10px;
+    background: linear-gradient(41deg, #626ec199, transparent);
+
+}
+
+.img_User:hover {
+    background: linear-gradient(41deg, transparent, #626ec199);
+}
+
+h4 {
+    font-size: 15px;
+    color: rgb(56, 44, 102);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 5px 10px;
+    text-align: start;
+    text-shadow: 1px 1px 2px rgb(22 22 14 / 75%);
+}
+
+.block-data {
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    height: 100px;
+    margin-left: 20px;
+    min-width: 15%;
+    min-height: 90px
+}
+
+.block-data a {
+    border: 2px solid #5c5994;
+    background: linear-gradient(220deg, #38c6d991, #00000005);
+    color: #eef4f7;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40%;
+    height: 20px;
+    padding: 2px 2px;
+    font-family: sans-serif;
+    text-align: start;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.block-data a:hover {
+    cursor: pointer;
+    background: linear-gradient(217deg, #00000005, #38c6d9);
+    text-shadow: 1px 1px 4px black;
+    border: 1px solid #366796;
+    box-shadow: 0px 0px 2px black, 0px 0px 2px gray;
+}
+
+.delete {
+    border: 2px solid #5a5e9e;
+    position: relative;
+    display: block;
+    /* margin-right: 0px; */
+    float: right;
+    width: 17%;
+    height: 25px;
+    text-align: center;
+    color: #5b5f9e;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'fajala';
+    letter-spacing: 2px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background: #b4c3cd;
+}
+
+.delete:hover {
+    cursor: pointer;
+    background: linear-gradient(360deg, rgba(226, 97, 11, 0.693), rgba(0, 0, 0, 0.029));
+    color: rgb(255, 185, 7);
+    border: 2px solid rgb(237, 210, 4);
+}
+
+/* Estilos para el titulo  */
+#principal h1 {
+    font-size: 32px;
+    color: #444;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+    margin-top: 10px;
+
+}
+
+/* Estilos para cada subtitulo */
+#principal h2,
+h3 {
+    font-size: 20px;
+    color: rgba(12, 54, 99, 0.734);
+    text-shadow: 1px 1px 2px #ccc;
+    letter-spacing: 1px;
+    font-family: "fajala";
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+}
+
+#principal h3 {
+    margin-left: 5%;
+    color: #1e8072;
+    font-size: 23px;
+}
+
+/* Efecto al acercar el cursor */
+#principal h2:hover {
+    color: #2979cd;
+}
+
+/* Estilos para cada parrafo */
+#principal p {
+    margin-top: 8px;
+    text-align: justify;
+    padding: 5px;
+    width: 95%;
+    color: rgb(91, 103, 92);
+}
+
+.more {
+    color: rgb(82, 80, 80);
+    font-size: 13px;
+}
+
+.category-date {
+    font-size: 17px;
+    color: #1c1e21a3;
+}
+
+.more:hover {
+
+    color: blue;
+}
+
+.autor {
+    font-size: 13px;
+    color: rgb(124, 123, 120);
+}
+
+
+/* Estilo para el enlace de mas titulos */
+#ver {
+    display: block;
+    border-radius: 5px;
+    background: rgba(173, 173, 175, 0.412);
+    border: 1px solid rgba(100, 97, 97, 0.775);
+    cursor: pointer;
+    width: 50%;
+    margin: 15px auto;
+    padding: 5px;
+
+}
+
+/* Estilo para el enlace del link */
+#ver a {
+    display: block;
+    clear: both;
+    font-size: 13px;
+    font-weight: bolder;
+    color: rgba(61, 125, 186, 0.775);
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* Efecto de transicion al alcercar el cursor */
+#ver:hover {
+    background: rgba(196, 196, 223, 0.515);
+    border: 1px solid rgba(114, 112, 112, 0.665);
+    color: rgba(18, 192, 211, 0.775);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378);
+    font-size: 13px;
+}
+
+#ver a:hover {
+    color: rgba(18, 192, 211, 0.775);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378);
+    opacity: 1;
+}
+
+/* Efecto de cercania al presionar el link */
+
+#ver a:active {
+    transform: scale(1.03);
+}
+
+
+
+/* footer */
+#footer {
+    width: 90%;
+    clear: both;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, #b3e1f058 0px, #d0c9c9b8 100%);
+    border: 1px solid rgba(184, 183, 183, 0.261);
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    color: rgba(0, 0, 0, 0.94);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0px 1px 1px rgba(204, 204, 204, 47%), 0px 3px 7px rgba(204, 204, 204, 0.974), 0px 0px 1px rgba(119, 116, 116, 0.707), 0px -2px 2px rgba(119, 116, 116, 0.707) inset;
+
+}
+
+#footer p {
+    padding: 5px;
+    font-size: 12px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.378), 0px 1px 3px rgba(165, 163, 163, 0.378);
+}
+
+#footer p a {
+    color: rgba(185, 185, 233, 0.94);
+}
+
+#footer p a:hover {
+    color: rgba(71, 0, 237, 0.823);
+}
+
+/* .footer-black{
+    margin-top: 30%;
+    background: rgba(0, 0, 0, 0.946);
+    height: 300px;
+}
+.about{
+   
+    color: white;
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.about h1{
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.about p{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 80%;
+    text-align: justify;
+} */
